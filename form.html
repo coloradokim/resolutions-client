@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>re|solution</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+  <form class="form section">
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Title</label>
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <p class="control is-expanded">
+            <input class="input" type="text" name="title" required>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Price</label>
+      </div>
+      <div class="field-body">
+        <div class="field has-addons">
+          <p class="control">
+            <a class="button is-static">
+              <span class="fa fa-usd fa-fw"></span>
+            </a>
+          </p>
+          <p class="control">
+            <input type="number" class="input" name="price" required>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Location</label>
+      </div>
+      <div class="field-body">
+        <div class="field has-addons">
+          <p class="control">
+            <a class="button is-static">
+              <span class="fa fa-location-arrow fa-fw"></span>
+            </a>
+          </p>
+          <p class="control">
+            <input type="text" class="input" name="location" required>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Image URL</label>
+      </div>
+      <div class="field-body">
+        <div class="field has-addons">
+          <p class="control">
+            <a class="button is-static">
+              <span class="fa fa-picture-o fa-fw"></span>
+            </a>
+          </p>
+          <p class="control">
+            <input type="text" class="input" name="imageUrl" placeholder="http://imgur.com/photo/url" required>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Description</label>
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <textarea class="textarea" name="description" placeholder="What's great about this URN?" required></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Size</label>
+      </div>
+      <div class="field-body">
+        <div class="field is-narrow">
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="size" value="1">
+              Small
+            </label>
+            <br />
+            <label class="radio">
+              <input type="radio" name="size" value="2">
+              Medium
+            </label>
+            <br />
+            <label class="radio">
+              <input type="radio" name="size" value="3">
+              Large
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Email</label>
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <p class="control">
+            <input type="text" class="input" name="email" placeholder="urn@mail.com">
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Spitefulness</label>
+      </div>
+      <div class="field-body">
+        <div class="field is-narrow">
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="spitefulness" value="1">
+              1
+            </label>
+            <br/>
+            <label class="radio">
+              <input type="radio" name="spitefulness" value="2">
+              2
+            </label>
+            <br/>
+            <label class="radio">
+              <input type="radio" name="spitefulness" value="3">
+              3
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label">
+        <label class="label">Ghost Proofing</label>
+      </div>
+      <div class="field-body">
+        <div class="field is-narrow">
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="ghostProofing" value="1">
+              Yes
+            </label>
+            <br />
+            <label class="radio">
+              <input type="radio" name="ghostProofing" value="0">
+              No
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label">
+        <!-- Left empty for spacing -->
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <button class="submit-button button is-primary">
+              Add URN!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="form.js"></script>
+</body>
+</html>
