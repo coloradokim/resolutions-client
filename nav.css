@@ -1,0 +1,41 @@
+.hero.is-danger.is-bold {
+  background-image: none;
+  background-color: #F17105;
+}
+
+.hero .fa-trophy {
+  margin: -0.4em;
+  color: #E6C229;
+}
+.hero {
+  padding-left: 10vw;
+}
+
+.hero .text {
+  position: relative;
+  z-index: 10;
+  font-size: 1.2em;
+}
+
+.hero .subtitle {
+  text-transform: uppercase;
+  margin-left: 3em;
+}
+
+.nav {
+  position: absolute;
+  top: 15%;
+  right: 10vw;
+}
+.nav a {
+  display: block;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em;
+  color: #D11149 !important;
+}
+.nav .fa {
+  color: white !important;
+}
